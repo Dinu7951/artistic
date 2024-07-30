@@ -1,0 +1,18 @@
+body {
+    margin: 0;
+    line-height: normal;
+}
+
+:root {
+    /* fonts */
+    --font-inter: Inter;
+
+    /* Gaps */
+    --gap-xl: 20px;
+    --gap-lgi: 19px;
+
+    /* Paddings */
+    --padding-11xl: 30px;
+    --padding-3xl: 22px;
+    --padding-6xs: 7px;
+}

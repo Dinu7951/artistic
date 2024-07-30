@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="stylesheet" href="signin.css">
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rokkitt:ital,wght@0,100..900;1,100..900&display=swap');
+
+    * {
+        font-family: "Rokkitt", serif;
+        margin: 0;
+    }
+
+    body {
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-position: top;
+    }
+
+    .header {
+        height: 100vh;
+        background-image: linear-gradient(to left bottom, rgba(132, 131, 131, 0.627), rgba(0, 0, 0, 0.813)), url(Images/loginBg.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .quote {
+        display: block;
+        font-size: 50px;
+        margin: 30px;
+        color: rgb(255, 255, 255);
+        font-weight: 300;
+        font-style: normal;
+        text-transform: uppercase;
+        letter-spacing: 10px;
+        animation: moveInLeft 1s;
+        backface-visibility: hidden;
+    }
+
+    @keyframes moveInLeft {
+        0% {
+            opacity: 0;
+            transform: translateX(-100px);
+        }
+
+        80% {
+            transform: translate(10px);
+        }
+
+        100% {
+
+            opacity: 1;
+            transform: translate(0px);
+        }
+    }
+
+    /* form code  */
+    .login input {
+        background: none;
+        border: 2px solid white;
+        padding: 10px;
+        width: 300px;
+        margin: 20px;
+        height: 30px;
+        border-radius: 20px;
+    }
+
+    .login input[type=text] {
+        color: white;
+        font-size: 16px;
+        background: none;
+    }
+
+    .login input[type=password] {
+        color: white;
+        background: none;
+    }
+
+    .login ::placeholder {
+        color: white;
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    .login button {
+        padding: 10px;
+        width: 200px;
+        margin: 30px;
+        background: white;
+        color: black;
+        border: 2px solid white;
+        border-radius: 20px;
+        font-size: 18px;
+    }
+
+    .login {
+        display: flex;
+        justify-content: center;
+        position: relative;
+    }
+
+    .login h1 {
+        text-align: center;
+        color: white;
+        font-weight: 400;
+        padding: 0 0 20px 0px;
+        text-decoration: underline;
+    }
+
+    .person {
+        width: 25px;
+        transform: translate(-70px, 10px);
+    }
+
+    .login form {
+        border: 2px solid white;
+        padding: 40px 40px 20px 40px;
+        height: 100%;
+        border-radius: 20px;
+
+    }
+
+
+    .login p {
+        color: white;
+        font-size: 16px;
+    }
+
+    .login a {
+        text-decoration: none;
+        color: red;
+        font-size: 18px;
+    }
+</style>
+
+<body>
+    <div class="header">
+        <div class="login-form">
+            <div class="primary-head">
+                <h1 class="subheading">
+                    <span class="quote">ARTISTIC ALLEY</span>
+                </h1>
+            </div>
+            <div class="login">
+                <form action="">
+                    <h1>SignIn</h1>
+                    <input id="username" type="text" placeholder="Username">
+                    <img src="ICONS/username.png" class="person" alt=""><br>
+                    <input id="pass" type="password" placeholder="Password">
+                    <img src="ICONS/password.png" class="person" alt=""><br>
+                    <p>i know you forgot the password . Didn't you..?<a href="">Forgot</a></p>
+                    <center><button class="submit">SignIn</button></center>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
