@@ -63,6 +63,12 @@ input[type=text] {
 
 .name {
     border-radius: 5px;
+    font-size: 18px;
+
+}
+
+input[type=password] {
+    color: white;
 }
 
 .container input {
