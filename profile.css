@@ -24,6 +24,10 @@ label.btn {
     color: #26B4FF;
 }
 
+.d-block {
+    width: 250px;
+}
+
 .btn {
     cursor: pointer;
 }

@@ -6,6 +6,7 @@
 }
 
 body {
+    height: 100vh;
     background-image: url(Images/destiny.jpg);
     /* background-position: center; */
     background-repeat: no-repeat;
@@ -92,7 +93,7 @@ body {
 }
 
 .form {
-
+    height: 510px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -110,7 +111,7 @@ body {
     border-radius: 10px;
     color: white;
     font-size: 20px;
-    margin: 30px;
+    margin: 20px;
 }
 
 
@@ -134,7 +135,7 @@ input[type="file"]::file-selector-button {
 label {
     width: 100px;
     display: inline-block;
-    margin: 30px;
+    margin: 25px;
     color: white;
     font-size: 20px;
 }
@@ -176,6 +177,10 @@ p {
     font-size: 18px;
     padding-left: 20px;
     background-color: transparent;
+}
+
+#catogory option {
+    background: red;
 }
 
 /* slide-show  */

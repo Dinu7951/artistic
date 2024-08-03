@@ -7,7 +7,6 @@
     <title>Register</title>
     <link rel="stylesheet" href="fas.css">
     <script src="https://kit.fontawesome.com/336c67dc87.js" crossorigin="anonymous"></script>
-
 </head>
 
 <body>
@@ -29,9 +28,11 @@
                 <a href="profile.html">
                     <li>Profile</li>
                 </a>
-                <a href="signin.html"><button class="login">SignIn</button></a>
+                <a href="magazine.html">
+                    <li>Magazine</li>
+                </a>
                 <span class="pipe">|</span>
-                <a href=""><button class="signup">SignUp</button></a>
+                <a href="signin.html"><button class="signup">SignOut</button></a>
             </ul>
         </div>
         <h1 class="box">Reach Your <span id="heading">Milestone</span></h1>
@@ -72,6 +73,14 @@
                                 <option value="fashion">Fashion</option>
                             </select>
                         </li>
+                        <li class="select">
+                            <label for="catogory">Position:</label>
+                            <select name="type" id="catogory">
+                                <option value="Select-One">Select-One</option>
+                                <option value="Potrait">Potrait</option>
+                                <option value="Landscape">Landscape</option>
+                            </select>
+                        </li>
                         <li class="img-upload">
                             <label for="upload">Image :</label>
                             <input type="file" id="upload" class="image">
@@ -83,9 +92,6 @@
             </div>
         </div>
     </div>
-
-
-
 </body>
 
 </html>

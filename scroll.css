@@ -96,21 +96,10 @@ h1 {
     background-color: aqua;
 }
 
-.scroll-img div {
-    display: flex;
-    width: 8cm;
-    height: 12cm;
-    flex-wrap: wrap;
-    margin: 30px;
-    margin-bottom: 0%;
-    background-color: aqua;
-}
-
 .scroll-img h1,
 .horiz h1 {
     font-size: 18px;
     text-align: left;
-    /* display: none; */
 }
 
 .icon {
@@ -133,9 +122,17 @@ h1 {
 .horizontal,
 .vertical {
     padding: 20px;
-
-    margin: 10px;
+    /* margin: 10px; */
     border: 2px solid black;
+
+}
+
+.horizontal {
+    border-left: 0;
+}
+
+.vertical {
+    border-right: 0;
 }
 
 .title {
