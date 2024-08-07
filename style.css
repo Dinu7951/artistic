@@ -12,7 +12,7 @@
         url(Images/home.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top;
+    /* background-position: top; */
     clip-path: polygon(0 0, 100% 0%, 100% 79%, 0% 100%);
 
 }
@@ -45,8 +45,6 @@ body {
     list-style: none;
     font-size: 18px;
     color: white;
-
-
 }
 
 .nav-bar a {
@@ -150,6 +148,12 @@ h3 {
     /* position: static; */
 }
 
+.timex {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
 .container {
     animation: fade linear both;
     animation-timeline: view();
@@ -163,6 +167,10 @@ h3 {
     background-size: cover;
     background-position: top;
     clip-path: polygon(100% 20%, 100% 80%, 0 100%, 0 40%);
+}
+
+.dabba h1 {
+    color: black;
 }
 
 .dabba {
@@ -183,7 +191,7 @@ h3 {
     color: white;
     position: relative;
     top: 35%;
-    font-size: 20px;
+    font-size: 23px;
     padding: 30px;
 
 }
@@ -211,7 +219,7 @@ ul {
 
 .footer-col {
     width: 25%;
-    padding: 0 15px;
+    padding: 0 10px;
 }
 
 .footer-col h4 {
@@ -274,6 +282,8 @@ ul {
     text-decoration: none;
 }
 
+
+
 .footer-col .social-links a:hover {
     color: #24262b;
     background-color: #ffffff;
@@ -310,7 +320,7 @@ ul {
 .time {
     padding-top: 20px;
     text-align: center;
-    font-size: 30px;
+    font-size: 50px;
     color: rgb(0, 0, 0);
     letter-spacing: 2px;
 
@@ -322,6 +332,7 @@ ul {
     font-weight: 400;
     justify-content: center;
     margin: -10px;
+    font-size: 30px;
     color: rgb(0, 0, 0);
     transform: translateY(150px);
 }
@@ -331,13 +342,13 @@ ul {
 }
 
 .launch-time div p {
-    font-size: 60px;
+    font-size: 50px;
     margin-bottom: -14px;
 }
 
 span {
     color: rgb(0, 0, 0);
-    font-size: 30px;
+    font-size: 25px;
     padding: 5px;
 }
 
@@ -440,5 +451,174 @@ span {
     100% {
         opacity: 1;
         transform: scale(1);
+    }
+}
+
+@media screen and (max-width :1024px) {
+    .quote {
+        font-size: 40px;
+        font-weight: 300;
+    }
+
+    .sub {
+        font-size: 20px;
+        letter-spacing: 15px;
+        font-weight: 200;
+    }
+
+    .image {
+        width: 200px;
+        height: 250px;
+    }
+
+    .nav-bar ul li {
+        font-size: 16px;
+    }
+
+    .nav-bar button {
+        font-size: 16px;
+    }
+
+    .logo img {
+        width: 40px;
+    }
+
+    .heading {
+        font-size: 25px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    .dabba p {
+        top: 38%;
+        font-size: 18px;
+        padding: 30px;
+    }
+
+    .time-box {
+        width: 900px;
+    }
+
+    .footer {
+        padding: 70px;
+    }
+
+}
+
+@media screen and (max-width :768px) {
+    .header {
+        clip-path: none;
+    }
+
+    .quote {
+        font-size: 30px;
+        font-weight: 300;
+    }
+
+    .sub {
+        font-size: 15px;
+        letter-spacing: 13px;
+        font-weight: 400;
+    }
+
+    .image {
+        width: 150px;
+        height: 200px;
+        padding-top: 0px;
+        border-radius: 15px;
+    }
+
+    .nav-bar ul li {
+        font-size: 14px;
+    }
+
+    .nav-bar button {
+        font-size: 14px;
+    }
+
+    .logo img {
+        width: 40px;
+    }
+
+    .heading {
+        padding: 30px 30px 0px 30px;
+        font-size: 25px;
+    }
+
+    h3 {
+        font-size: 15px;
+    }
+
+    .dabba p {
+        top: 35%;
+        font-size: 16px;
+        padding: 30px;
+    }
+
+    .time-box {
+        width: 750px;
+        height: 400px;
+    }
+
+    .footer {
+        padding: 70px;
+    }
+
+    #button {
+        margin: 50px;
+        width: 200px;
+        height: 60px;
+        font-size: 16px;
+    }
+
+    .register {
+        width: 200px;
+        height: 40px;
+        font-size: 13px;
+    }
+
+    span {
+        font-size: 22px;
+    }
+
+    .time-head {
+        font-size: 25px;
+    }
+
+    .launch-time div p {
+        font-size: 40px;
+    }
+
+    .launch-time,
+    .time-head {
+        margin: -30px;
+    }
+
+    .footer-col h4 {
+        font-size: 16px;
+    }
+
+    .footer-col ul li a {
+        font-size: 12px;
+    }
+
+    .footer-col .social-links a {
+        height: 22px;
+        width: 22px;
+        margin: 0px 10px 10px 0;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+        color: #ffffff;
+        transition: all 0.5s ease;
+
+    }
+
+    .social-links i {
+        position: relative;
+        top: -10px;
+        font-size: 10px;
     }
 }
