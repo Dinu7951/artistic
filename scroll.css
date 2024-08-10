@@ -15,7 +15,6 @@ body {
     display: flex;
     justify-content: space-between;
     border-bottom: 2px solid black;
-
 }
 
 .logo img {
@@ -79,6 +78,10 @@ hr {
     float: right;
 }
 
+/* .sec-box {
+    display: none;
+} */
+
 .head {
     margin: 20px;
     font-weight: 300;
@@ -95,6 +98,11 @@ hr {
     animation: fade linear both;
     animation-timeline: view();
     animation-range: entry 50% cover 50%;
+
+}
+
+.land {
+    display: none;
 }
 
 .landscape-right {
@@ -102,6 +110,7 @@ hr {
     margin-top: 50px;
     background-color: aquamarine;
     border-radius: 30px 0px 0px 30px;
+
 }
 
 .landscape-right {
@@ -138,6 +147,8 @@ hr {
     height: 9cm;
 
 }
+
+
 
 .title {
     /* text-decoration: underline; */
@@ -230,4 +241,148 @@ hr {
     0% {
         opacity: 0;
     }
+}
+
+/* color:#FFAF00,#F5004F; */
+.photo img {
+    width: 10cm;
+    height: 15cm;
+    padding: 20px;
+}
+
+.por {
+    display: flex;
+    width: 20cm;
+    background-color: #FFAF00;
+    margin: 40px 40px 40px 0px;
+    border-radius: 0px 30px 30px 0px;
+    animation: fordabba linear both;
+    animation-timeline: view();
+    animation-range: entry 30% cover 50%;
+
+}
+
+.por-right {
+    display: flex;
+    width: 20cm;
+    background-color: #FFAF00;
+    margin: 70px 40px 40px 0px;
+    border-radius: 30px 0px 0px 30px;
+    position: relative;
+    left: 47.5%;
+    animation: forpor linear both;
+    animation-timeline: view();
+    animation-range: entry 50% cover 50%;
+
+
+}
+
+.details h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 300;
+    padding-top: 20px;
+}
+
+.details {
+    width: 10cm;
+    height: 15cm;
+    display: grid;
+    place-items: center;
+    height: 100%;
+    padding: 30px;
+}
+
+.details h2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.details img {
+    width: 140px;
+    height: 145px;
+    border-radius: 50%;
+    margin: 30px;
+}
+
+.details p {
+    font-size: 20px;
+    padding: 20px;
+}
+
+.icons {
+    display: flex;
+}
+
+.like-por span {
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+
+.land {
+    background: none;
+    padding: 20px;
+    width: 200px;
+    font-size: 18px;
+    margin: 20px;
+    color: black;
+    border: 2px solid white;
+    border-radius: 20px;
+    float: right;
+}
+
+@keyframes fordabba {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    80% {
+        transform: translate(10px);
+    }
+
+    100% {
+
+        opacity: 1;
+
+    }
+}
+
+@keyframes forpor {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    80% {
+        transform: translate(-10px);
+    }
+
+    100% {
+
+        opacity: 1;
+
+    }
+}
+
+.container-potrait {
+    display: none;
 }
