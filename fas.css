@@ -239,3 +239,43 @@ p {
     }
 
 }
+
+.ham-bar a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    display: grid;
+    place-items: center;
+    margin: 40px;
+    padding: 10px;
+    font-size: 18px;
+    border-bottom: 0.5px solid grey;
+
+
+}
+
+.wrong {
+    margin: 30px;
+    margin-bottom: 0px;
+    font-size: 20px;
+    padding: 10px;
+
+}
+
+.ham {
+    background-color: black;
+    display: none;
+    height: 900px;
+}
+
+.menu {
+    margin: 30px;
+    display: block;
+    font-size: 30px;
+}
+
+.mun {
+    background-color: none;
+    display: none;
+    animation: moveInRight 1s ease;
+}

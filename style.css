@@ -7,8 +7,7 @@
 
 .header {
     height: 98vh;
-    background-image:
-        linear-gradient(to left bottom, rgba(199, 198, 198, 0.627), rgba(0, 0, 0, 0.813)),
+    background-image: linear-gradient(to left bottom, rgba(199, 198, 198, 0.627), rgba(0, 0, 0, 0.813)),
         url(Images/home.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -24,7 +23,12 @@ body {
 .nav-bar {
     display: flex;
     justify-content: space-between;
+    /* display: none; */
 
+}
+
+.ul {
+    /* display: block; */
 }
 
 .logo img {
@@ -69,10 +73,9 @@ body {
 }
 
 .primary-head {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    top: 22%;
+    display: grid;
+    place-items: center;
+    height: 60%;
 }
 
 .quote {
@@ -117,11 +120,12 @@ body {
 
 }
 
+
+
 /* COLOUM IMAGES */
 .cartoon {
     display: flex;
     justify-content: space-around;
-
 }
 
 .heading {
@@ -352,7 +356,7 @@ span {
     padding: 5px;
 }
 
-#button {
+.button {
     padding: 20px;
     margin: 20px;
     transform: translateY(160px);
@@ -454,6 +458,46 @@ span {
     }
 }
 
+.ham-bar a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    display: grid;
+    place-items: center;
+    margin: 40px;
+    padding: 10px;
+    font-size: 18px;
+    border-bottom: 0.5px solid grey;
+
+
+}
+
+.wrong {
+    margin: 30px;
+    margin-bottom: 0px;
+    font-size: 20px;
+    padding: 10px;
+
+}
+
+.ham {
+    background-color: black;
+    display: none;
+    height: 900px;
+}
+
+.menu {
+    margin: 30px;
+    display: block;
+    font-size: 30px;
+}
+
+.mun {
+    background-color: none;
+    display: none;
+    animation: moveInRight 1s ease;
+}
+
 @media screen and (max-width :1024px) {
     .quote {
         font-size: 40px;
@@ -493,7 +537,7 @@ span {
 
     .dabba p {
         top: 38%;
-        font-size: 18px;
+        font-size: 13px;
         padding: 30px;
     }
 
@@ -527,7 +571,7 @@ span {
         width: 150px;
         height: 200px;
         padding-top: 0px;
-        border-radius: 15px;
+        border-radius: 29px;
     }
 
     .nav-bar ul li {
@@ -553,7 +597,7 @@ span {
 
     .dabba p {
         top: 35%;
-        font-size: 16px;
+        font-size: 12px;
         padding: 30px;
     }
 
@@ -620,5 +664,582 @@ span {
         position: relative;
         top: -10px;
         font-size: 10px;
+    }
+}
+
+@media screen and (max-width :425px) {
+    .header {
+        clip-path: none;
+    }
+
+
+    .ul {
+        display: none;
+    }
+
+    .quote {
+        font-size: 20px;
+        font-weight: 300;
+    }
+
+    .sub {
+        font-size: 10px;
+        letter-spacing: 11px;
+        font-weight: 400;
+    }
+
+    .image {
+        width: 90px;
+        height: 120px;
+        border-radius: 15px;
+    }
+
+    .nav-bar ul li {
+        font-size: 14px;
+    }
+
+    .nav-bar button {
+        font-size: 14px;
+    }
+
+    .logo img {
+        width: 30px;
+        margin: 20px;
+    }
+
+    .heading {
+        padding: 30px 30px 0px 30px;
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 12px;
+    }
+
+    .dabba p {
+        top: 35%;
+        font-size: 8.5px;
+        padding: 30px;
+    }
+
+    .time-box {
+        width: 550px;
+        height: 200px;
+    }
+
+    .footer {
+        padding: 70px;
+    }
+
+    .button {
+        transform: translateY(130px);
+        width: 120px;
+        height: 30px;
+        padding: 10px;
+        text-align: center;
+        font-size: 10px;
+    }
+
+    .register {
+        width: 150px;
+        height: 40px;
+        font-size: 11px;
+    }
+
+    .time-box h1 {
+        font-size: 12px;
+        transform: translateY(70px);
+    }
+
+    .launch-time div p {
+        font-size: 20px;
+    }
+
+    .launch-time {
+        transform: translateY(100px);
+
+    }
+
+    .launch-time div {
+        flex-basis: 60px;
+    }
+
+    .launch-time div span {
+        font-size: 12px;
+
+    }
+
+    .footer-col h4 {
+        font-size: 10px;
+    }
+
+    .footer-col ul li a {
+        font-size: 10px;
+    }
+
+    .clubs {
+        display: none;
+    }
+
+    .mail {
+        font-size: 12px;
+    }
+
+    .footer-col {
+        padding: 12px;
+    }
+
+    .footer-col .social-links a {
+        height: 22px;
+        width: 20px;
+        /* margin: 0px 10px 10px 0; */
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+        color: #ffffff;
+        transition: all 0.5s ease;
+
+    }
+
+    .row {
+        transform: translateX(-30px);
+    }
+
+    .footer-col ul {
+        transform: translateX(-20px);
+    }
+
+    .social-links i {
+        position: relative;
+        top: -10px;
+        font-size: 10px;
+    }
+
+    .ham-bar a {
+        text-decoration: none;
+        list-style: none;
+        color: white;
+        display: grid;
+        place-items: center;
+        margin: 20px;
+        padding: 10px;
+        font-size: 12px;
+
+
+
+    }
+
+    .wrong {
+        margin: 10px;
+        margin-bottom: 0px;
+        font-size: 15px;
+        padding: 10px;
+
+    }
+
+    .ham {
+        background-color: black;
+        height: 415px;
+    }
+
+    .menu {
+        margin: 30px;
+        font-size: 20px;
+    }
+
+    .mun {
+        display: block;
+        font-size: 12px;
+        background-color: none;
+    }
+
+}
+
+@media screen and (max-width :375px) {
+    .header {
+        clip-path: none;
+    }
+
+    .ul {
+        display: none;
+    }
+
+    .quote {
+        font-size: 18px;
+        font-weight: 300;
+    }
+
+    .sub {
+        font-size: 9px;
+        letter-spacing: 11px;
+        font-weight: 400;
+    }
+
+    .heading {
+        padding: 30px 30px 0px 30px;
+        font-size: 18px;
+    }
+
+    h3 {
+        font-size: 10px;
+    }
+
+    .image {
+        width: 80px;
+        height: 100px;
+        border-radius: 15px;
+    }
+
+    .nav-bar ul li {
+        font-size: 14px;
+    }
+
+    .nav-bar button {
+        font-size: 14px;
+    }
+
+    .logo img {
+        width: 30px;
+        margin: 20px;
+    }
+
+
+
+    .dabba p {
+        top: 35%;
+        font-size: 8px;
+        padding: 20px;
+    }
+
+    .time-box {
+        width: 550px;
+        height: 200px;
+        border-radius: 30px;
+    }
+
+    .footer {
+        padding: 70px;
+    }
+
+    .button {
+        transform: translateY(130px);
+        width: 120px;
+        height: 30px;
+        padding: 10px;
+        text-align: center;
+        font-size: 10px;
+    }
+
+    .register {
+        width: 150px;
+        height: 40px;
+        font-size: 11px;
+    }
+
+    .time-box h1 {
+        font-size: 12px;
+        transform: translateY(70px);
+    }
+
+    .launch-time div p {
+        font-size: 20px;
+    }
+
+    .launch-time {
+        transform: translateY(100px);
+
+    }
+
+    .launch-time div {
+        flex-basis: 60px;
+    }
+
+    .launch-time div span {
+        font-size: 12px;
+
+    }
+
+    .footer-col {
+        padding: 10px;
+    }
+
+    .footer-col h4 {
+        font-size: 9px;
+    }
+
+    .footer-col ul li a {
+        font-size: 8px;
+    }
+
+    .clubs {
+        display: none;
+    }
+
+    .mail {
+        font-size: 10px;
+    }
+
+    .footer-col .social-links a {
+        height: 22px;
+        width: 20px;
+        /* margin: 0px 10px 10px 0; */
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+        color: #ffffff;
+        transition: all 0.5s ease;
+
+    }
+
+    .social-links i {
+        position: relative;
+        top: -10px;
+        font-size: 10px;
+    }
+
+    .ham-bar a {
+        text-decoration: none;
+        list-style: none;
+        color: white;
+        display: grid;
+        place-items: center;
+        margin: 20px;
+        padding: 10px;
+        font-size: 12px;
+
+
+
+    }
+
+    .row {
+        transform: translateX(-40px);
+    }
+
+    .footer-col ul {
+        transform: translateX(-20px);
+    }
+
+    .wrong {
+        margin: 10px;
+        margin-bottom: 0px;
+        font-size: 15px;
+        padding: 10px;
+
+    }
+
+    .ham {
+        background-color: black;
+        height: 415px;
+    }
+
+    .menu {
+        margin: 30px;
+        font-size: 20px;
+    }
+
+    .mun {
+        display: block;
+        font-size: 12px;
+        background-color: none;
+    }
+
+}
+
+
+/* 320 responsive design  */
+@media screen and (max-width :320px) {
+    .header {
+        clip-path: none;
+    }
+
+    .ul {
+        display: none;
+    }
+
+    .quote {
+        font-size: 16px;
+        font-weight: 300;
+    }
+
+    .sub {
+        font-size: 6px;
+        letter-spacing: 11px;
+        font-weight: 400;
+    }
+
+    .heading {
+        padding: 30px 30px 0px 30px;
+        font-size: 16px;
+    }
+
+    h3 {
+        font-size: 9px;
+    }
+
+    .image {
+        width: 70px;
+        height: 90px;
+        border-radius: 15px;
+    }
+
+    .nav-bar ul li {
+        font-size: 14px;
+    }
+
+    .nav-bar button {
+        font-size: 14px;
+    }
+
+    .logo img {
+        width: 20px;
+        margin: 20px;
+    }
+
+
+
+    .dabba p {
+        top: 35%;
+        font-size: 6.5px;
+        padding: 20px;
+    }
+
+    .time-box {
+        width: 550px;
+        height: 150px;
+        border-radius: 20px;
+    }
+
+    .footer {
+        padding: 70px;
+    }
+
+    .button {
+        transform: translateY(110px);
+        width: 120px;
+        height: 30px;
+        padding: 10px;
+        text-align: center;
+        font-size: 10px;
+    }
+
+    .register {
+        width: 150px;
+        height: 40px;
+        font-size: 11px;
+    }
+
+    .time-box h1 {
+        font-size: 10px;
+        transform: translateY(60px);
+    }
+
+    .launch-time div p {
+        font-size: 18px;
+    }
+
+    .launch-time {
+        transform: translateY(90px);
+
+    }
+
+    .launch-time div {
+        flex-basis: 50px;
+    }
+
+    .launch-time div span {
+        font-size: 10px;
+
+    }
+
+    .footer-col h4 {
+        font-size: 8px;
+    }
+
+    .footer-col ul li a {
+        font-size: 10px;
+    }
+
+    .clubs {
+        display: none;
+    }
+
+    .mail {
+        font-size: 10px;
+        margin-right: 50px;
+    }
+
+    .row {
+        transform: translateX(-70px);
+    }
+
+    .footer-col ul {
+        transform: translateX(-20px);
+    }
+
+    .footer-col .social-links a {
+        height: 22px;
+        width: 20px;
+        /* margin: 0px 10px 10px 0; */
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+        color: #ffffff;
+        transition: all 0.5s ease;
+
+    }
+
+    .social-links i {
+        position: relative;
+        top: -10px;
+        font-size: 10px;
+    }
+
+    .ham-bar a {
+        text-decoration: none;
+        list-style: none;
+        color: white;
+        display: grid;
+        place-items: center;
+        margin: 20px;
+        padding: 10px;
+        font-size: 12px;
+
+
+
+    }
+
+    .wrong {
+        margin: 10px;
+        margin-bottom: 0px;
+        font-size: 15px;
+        padding: 10px;
+
+    }
+
+    .ham {
+        background-color: black;
+        height: 415px;
+    }
+
+    .menu {
+        margin: 20px;
+        font-size: 18px;
+    }
+
+    .mun {
+        display: block;
+        font-size: 12px;
+        background-color: none;
+    }
+
+    .footer-col h4::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -6px;
+        background-color: #e91e63;
+        height: 2px;
+        box-sizing: border-box;
+        width: 40px;
     }
 }
