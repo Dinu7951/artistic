@@ -279,3 +279,1070 @@ p {
     display: none;
     animation: moveInRight 1s ease;
 }
+
+@media screen and (max-width:1024px) {
+
+    .logo img {
+        width: 40px;
+    }
+
+    .nav-bar ul {
+        display: flex;
+
+    }
+
+    .nav-bar ul li {
+        padding: 20px;
+        list-style: none;
+        font-size: 16px;
+        color: white;
+
+
+    }
+
+    .nav-bar a {
+        text-decoration: none;
+
+    }
+
+    .nav-bar button {
+        background: none;
+        color: white;
+        padding: 10px;
+        margin: 10px;
+        font-size: 15.5px;
+        border: none;
+
+    }
+
+    .nav-bar .pipe {
+        color: white;
+        position: relative;
+        top: 20px;
+    }
+
+    /* form code  */
+
+    .list {
+        display: flex;
+    }
+
+    .box {
+        text-align: center;
+        color: white;
+        font-weight: 300;
+        margin: 25px;
+        font-size: 30px;
+        font-weight: 400;
+    }
+
+    .submit h1 {
+        color: white;
+        padding: 30px;
+        font-size: 25px;
+        font-weight: 300;
+    }
+
+    .cen-form {
+        border: 2px solid white;
+        display: flex;
+    }
+
+    .form {
+        height: 390px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .submit h1 {
+        text-align: center;
+    }
+
+    .btn-sub {
+        width: 170px;
+        height: 35px;
+        background-color: transparent;
+        border: 2px solid white;
+        border-radius: 10px;
+        color: white;
+        font-size: 16px;
+        margin: 15px;
+    }
+
+
+    input[type="file"]::file-selector-button {
+        width: 150px;
+        height: 25px;
+        border: 2px solid rgb(255, 255, 255);
+        border-radius: 5px;
+        color: white;
+        font-size: 12px;
+        background-color: transparent;
+    }
+
+    .submit ul li {
+        list-style: none;
+        /* padding: 20px; */
+        /* text-align: center; */
+    }
+
+    label {
+        width: 100px;
+        display: inline-block;
+        margin: 18px;
+        color: white;
+        font-size: 16px;
+    }
+
+    .title input {
+        width: 200px;
+        height: 30px;
+        background-color: transparent;
+        border: 2px solid white;
+        border-radius: 10px;
+    }
+
+    input {
+        color: white;
+        font-size: 18px;
+    }
+
+    .title input::placeholder {
+        color: white;
+        font-size: 16px;
+        padding-left: 15px;
+    }
+
+    p {
+        font-size: 16px;
+        color: rgb(255, 0, 0);
+        text-align: center;
+        font-weight: bold;
+        padding: 5px;
+    }
+
+    #catogory {
+        width: 210px;
+        height: 30px;
+        border: 2px solid rgb(255, 255, 255);
+        border-radius: 10px;
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+        padding-left: 15px;
+        background-color: transparent;
+    }
+
+    #catogory option {
+        background: red;
+    }
+
+    /* slide-show  */
+    #slideshow {
+        overflow: hidden;
+        height: 410px;
+        width: 350px;
+        margin: 0 auto;
+
+    }
+
+    .slide {
+        float: left;
+        height: 410px;
+        width: 350px;
+        background-size: cover;
+
+    }
+
+    .slide-wrapper {
+        width: calc(350px * 4);
+        animation: slide 27s infinite ease-in;
+    }
+
+    .slide:nth-child(1) {
+        background-image: url("Images/register.jpg");
+    }
+
+    .slide:nth-child(2) {
+        background-image: url("Images/register-artist.jpg");
+    }
+
+    .slide:nth-child(3) {
+        background-image: url("Images/register-literature.jpg");
+    }
+
+    .slide:nth-child(4) {
+        background-image: url("Images/fashion-style.jpg");
+    }
+
+    @keyframes slide {
+        20% {
+            margin-left: 0px;
+        }
+
+        40% {
+            margin-left: calc(-350px * 1);
+        }
+
+
+        60% {
+            margin-left: calc(-350px * 2);
+        }
+
+        80% {
+            margin-left: calc(-350px * 3);
+        }
+
+    }
+
+}
+
+@media screen and (max-width:768px) {
+
+    .logo img {
+        width: 30px;
+    }
+
+    .nav-bar ul {
+        display: flex;
+
+    }
+
+    .nav-bar ul li {
+        padding: 18px;
+        list-style: none;
+        font-size: 14px;
+        color: white;
+    }
+
+    .nav-bar a {
+        text-decoration: none;
+    }
+
+    .nav-bar button {
+        background: none;
+        color: white;
+        padding: 9px;
+        margin: 10px;
+        font-size: 14px;
+        border: none;
+    }
+
+    .nav-bar .pipe {
+        color: white;
+        position: relative;
+        top: 15px;
+    }
+
+    /* form code  */
+
+    .list {
+        display: flex;
+    }
+
+    .box {
+        /* h1 heading */
+        text-align: center;
+        color: white;
+        font-weight: 300;
+        margin: 25px;
+        font-size: 25px;
+        font-weight: 400;
+    }
+
+    .submit h1 {
+        color: white;
+        padding: 20px;
+        font-size: 20px;
+        font-weight: 300;
+        text-align: center;
+    }
+
+    .cen-form {
+        border: 2px solid white;
+        display: flex;
+
+    }
+
+    .form {
+        display: flex;
+
+    }
+
+
+    .btn-sub {
+        width: 150px;
+        height: 30px;
+        background-color: transparent;
+        border: 2px solid white;
+        border-radius: 10px;
+        color: white;
+        font-size: 14px;
+        margin: 15px;
+    }
+
+
+    input[type="file"]::file-selector-button {
+        width: 120px;
+        height: 20px;
+        border: 2px solid rgb(255, 255, 255);
+        border-radius: 5px;
+        color: white;
+        font-size: 10px;
+        background-color: transparent;
+    }
+
+    input[type=file] {
+        font-size: 12px;
+    }
+
+    .submit ul li {
+        list-style: none;
+        /* padding: 20px; */
+        /* text-align: center; */
+    }
+
+    label {
+        width: 100px;
+        display: inline-block;
+        margin: 20px;
+        color: white;
+        font-size: 16px;
+    }
+
+    .title input {
+        width: 170px;
+        height: 25px;
+        background-color: transparent;
+        border: 2px solid white;
+        border-radius: 10px;
+    }
+
+    input {
+        color: white;
+        font-size: 18px;
+    }
+
+    .title input::placeholder {
+        color: white;
+        font-size: 14px;
+        padding-left: 13px;
+    }
+
+    p {
+        font-size: 14px;
+        color: rgb(255, 0, 0);
+        text-align: center;
+        font-weight: bold;
+        padding: 10px;
+    }
+
+    #catogory {
+        width: 180px;
+        height: 30px;
+        border: 2px solid rgb(255, 255, 255);
+        border-radius: 10px;
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+        padding-left: 10px;
+        background-color: transparent;
+    }
+
+    #catogory option {
+        background: red;
+    }
+
+    /* slide-show  */
+    #slideshow {
+        overflow: hidden;
+        height: 410px;
+        width: 350px;
+        margin: 0 auto;
+
+    }
+
+    .slide {
+        float: left;
+        height: 410px;
+        width: 350px;
+        background-size: cover;
+
+    }
+
+    .slide-wrapper {
+        width: calc(350px * 4);
+        animation: slide 27s infinite ease-in;
+    }
+
+    .slide:nth-child(1) {
+        background-image: url("Images/register.jpg");
+    }
+
+    .slide:nth-child(2) {
+        background-image: url("Images/register-artist.jpg");
+    }
+
+    .slide:nth-child(3) {
+        background-image: url("Images/register-literature.jpg");
+    }
+
+    .slide:nth-child(4) {
+        background-image: url("Images/fashion-style.jpg");
+    }
+
+    @keyframes slide {
+        20% {
+            margin-left: 0px;
+        }
+
+        40% {
+            margin-left: calc(-350px * 1);
+        }
+
+
+        60% {
+            margin-left: calc(-350px * 2);
+        }
+
+        80% {
+            margin-left: calc(-350px * 3);
+        }
+
+    }
+}
+
+@media screen and (max-width:425px) {
+    body {
+        background-image: linear-gradient(to left bottom, rgba(0, 0, 0, 0.627), rgba(0, 0, 0, 0.813)),
+            url(Images/photography.jpg);
+
+    }
+
+    #slideshow {
+        display: none;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logo img {
+        width: 30px;
+    }
+
+    .nav-bar ul {
+        display: none;
+
+    }
+
+    .nav-bar ul li {
+        padding: 18px;
+        list-style: none;
+        font-size: 14px;
+        color: white;
+    }
+
+    .nav-bar a {
+        text-decoration: none;
+    }
+
+    .nav-bar button {
+        background: none;
+        color: white;
+        padding: 9px;
+        margin: 10px;
+        font-size: 14px;
+        border: none;
+    }
+
+    .nav-bar .pipe {
+        color: white;
+        position: relative;
+        top: 15px;
+    }
+
+    /* form code  */
+
+    .list {
+        display: flex;
+    }
+
+    .box {
+        /* h1 heading */
+        text-align: center;
+        color: white;
+        font-weight: 300;
+        margin: 40px 0 30px 0;
+        font-size: 25px;
+        font-weight: 400;
+    }
+
+    .submit h1 {
+        color: white;
+        padding: 10px;
+        font-size: 20px;
+        font-weight: 300;
+        text-align: center;
+    }
+
+    .cen-form {
+        border: 2px solid white;
+        display: flex;
+
+    }
+
+    .form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .btn-sub {
+        width: 150px;
+        height: 30px;
+        background-color: transparent;
+        border: 2px solid white;
+        border-radius: 10px;
+        color: white;
+        font-size: 14px;
+        margin: 15px;
+    }
+
+
+    input[type="file"]::file-selector-button {
+        width: 120px;
+        height: 20px;
+        border: 2px solid rgb(255, 255, 255);
+        border-radius: 5px;
+        color: white;
+        font-size: 10px;
+        background-color: transparent;
+    }
+
+    input[type=file] {
+        font-size: 12px;
+    }
+
+    .submit ul li {
+        list-style: none;
+        /* padding: 20px; */
+        /* text-align: center; */
+    }
+
+    label {
+        width: 100px;
+        display: inline-block;
+        margin: 20px;
+        color: white;
+        font-size: 16px;
+    }
+
+    .title input {
+        width: 170px;
+        height: 25px;
+        background-color: transparent;
+        border: 2px solid white;
+        border-radius: 10px;
+    }
+
+    input {
+        color: white;
+        font-size: 18px;
+    }
+
+    .title input::placeholder {
+        color: white;
+        font-size: 14px;
+        padding-left: 13px;
+    }
+
+    p {
+        font-size: 14px;
+        color: rgb(255, 0, 0);
+        text-align: center;
+        font-weight: bold;
+        padding: 10px;
+    }
+
+    #catogory {
+        width: 180px;
+        height: 30px;
+        border: 2px solid rgb(255, 255, 255);
+        border-radius: 10px;
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+        padding-left: 10px;
+        background-color: transparent;
+    }
+
+    #catogory option {
+        background: red;
+    }
+
+    .ham-bar a {
+        text-decoration: none;
+        list-style: none;
+        color: black;
+        display: grid;
+        place-items: center;
+        margin: 20px;
+        padding: 10px;
+
+        font-size: 12px;
+    }
+
+    .wrong {
+        margin: 10px;
+        margin-bottom: 0px;
+        font-size: 15px;
+        padding: 10px;
+
+    }
+
+    .ham {
+        background-color: rgba(255, 255, 255, 0.736);
+        height: 597px;
+        transform: translateX(320px);
+    }
+
+    .menu {
+        margin: 20px;
+        font-size: 25px;
+        transform: translateX(370px);
+
+    }
+
+    .mun {
+        display: block;
+        position: absolute;
+        font-size: 12px;
+        background-color: none;
+
+    }
+}
+
+
+@media screen and (max-width:375px) {
+    body {
+        background-image: linear-gradient(to left bottom, rgba(0, 0, 0, 0.627), rgba(0, 0, 0, 0.813)),
+            url(Images/photography.jpg);
+    }
+
+    #slideshow {
+        display: none;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logo img {
+        width: 25px;
+    }
+
+    .nav-bar ul {
+        display: none;
+
+    }
+
+    .nav-bar ul li {
+        padding: 18px;
+        list-style: none;
+        font-size: 14px;
+        color: white;
+    }
+
+    .nav-bar a {
+        text-decoration: none;
+    }
+
+    .nav-bar button {
+        background: none;
+        color: white;
+        padding: 9px;
+        margin: 10px;
+        font-size: 14px;
+        border: none;
+    }
+
+    .nav-bar .pipe {
+        color: white;
+        position: relative;
+        top: 15px;
+    }
+
+    /* form code  */
+
+    .list {
+        display: flex;
+    }
+
+    .box {
+        /* h1 heading */
+        text-align: center;
+        color: white;
+        font-weight: 300;
+        margin: 40px 0 30px 0;
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    .submit h1 {
+        color: white;
+        margin: 10px;
+        font-size: 20px;
+        font-weight: 300;
+        text-align: center;
+    }
+
+    .cen-form {
+        border: 2px solid white;
+        display: flex;
+
+    }
+
+    .form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .btn-sub {
+        width: 120px;
+        height: 25px;
+        background-color: transparent;
+        border: 1px solid white;
+        border-radius: 10px;
+        color: white;
+        font-size: 14px;
+        margin: 15px;
+    }
+
+
+    input[type="file"]::file-selector-button {
+        width: 100px;
+        height: 20px;
+        border: 1px solid rgb(255, 255, 255);
+        border-radius: 7px;
+        color: white;
+        font-size: 10px;
+        background-color: transparent;
+    }
+
+    input[type=file] {
+        font-size: 10px;
+    }
+
+    .submit ul li {
+        list-style: none;
+    }
+
+    label {
+        width: 80px;
+        display: inline-block;
+        margin: 15px;
+        color: white;
+        font-size: 16px;
+    }
+
+    .title input {
+        width: 140px;
+        height: 20px;
+        background-color: transparent;
+        border: 1px solid white;
+        border-radius: 10px;
+    }
+
+    input {
+        color: white;
+        font-size: 18px;
+    }
+
+    .title input::placeholder {
+        color: white;
+        font-size: 12px;
+        padding-left: 13px;
+    }
+
+    p {
+        font-size: 12px;
+        color: rgb(255, 0, 0);
+        text-align: center;
+        font-weight: bold;
+        padding: 10px;
+    }
+
+    #catogory {
+        width: 150px;
+        height: 25px;
+        border: 1px solid rgb(255, 255, 255);
+        border-radius: 10px;
+        color: white;
+        text-decoration: none;
+        font-size: 12px;
+        padding-left: 10px;
+        background-color: transparent;
+    }
+
+    #catogory option {
+        background: red;
+    }
+
+    .ham-bar a {
+        text-decoration: none;
+        list-style: none;
+        color: black;
+        display: grid;
+        place-items: center;
+        margin: 20px;
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .wrong {
+        margin: 10px;
+        margin-bottom: 0px;
+        font-size: 15px;
+        padding: 10px;
+
+    }
+
+    .ham {
+        background-color: rgba(255, 255, 255, 0.809);
+        height: 597px;
+        transform: translateX(270px);
+    }
+
+    .menu {
+        margin: 20px;
+        font-size: 25px;
+        transform: translateX(320px);
+
+    }
+
+    .mun {
+        display: block;
+        position: absolute;
+        font-size: 12px;
+        background-color: none;
+
+    }
+}
+
+
+
+
+@media screen and (max-width:320px) {
+    body {
+        background-image: linear-gradient(to left bottom, rgba(0, 0, 0, 0.627), rgba(0, 0, 0, 0.813)),
+            url(Images/photography.jpg);
+    }
+
+    #slideshow {
+        display: none;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logo img {
+        width: 25px;
+    }
+
+    .nav-bar ul {
+        display: none;
+
+    }
+
+    .nav-bar ul li {
+        padding: 18px;
+        list-style: none;
+        font-size: 14px;
+        color: white;
+    }
+
+    .nav-bar a {
+        text-decoration: none;
+    }
+
+    .nav-bar button {
+        background: none;
+        color: white;
+        padding: 9px;
+        margin: 10px;
+        font-size: 14px;
+        border: none;
+    }
+
+    .nav-bar .pipe {
+        color: white;
+        position: relative;
+        top: 15px;
+    }
+
+    /* form code  */
+
+    .list {
+        display: flex;
+    }
+
+    .box {
+        /* h1 heading */
+        text-align: center;
+        color: white;
+        font-weight: 300;
+        margin: 50px 0 0px 0;
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .submit h1 {
+        color: white;
+        margin: 10px;
+        font-size: 18px;
+        font-weight: 300;
+        text-align: center;
+    }
+
+    .cen-form {
+        border: 2px solid white;
+        display: flex;
+
+    }
+
+    .form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .btn-sub {
+        width: 100px;
+        height: 20px;
+        background-color: transparent;
+        border: 1px solid white;
+        border-radius: 10px;
+        color: white;
+        font-size: 12px;
+        margin: 15px;
+    }
+
+
+    input[type="file"]::file-selector-button {
+        width: 100px;
+        height: 20px;
+        border: 1px solid rgb(255, 255, 255);
+        border-radius: 7px;
+        color: white;
+        font-size: 10px;
+        background-color: transparent;
+    }
+
+    input[type=file] {
+        font-size: 8px;
+    }
+
+    .submit ul li {
+        list-style: none;
+    }
+
+    label {
+        width: 70px;
+        display: inline-block;
+        margin: 15px;
+        color: white;
+        font-size: 16px;
+    }
+
+    .title input {
+        width: 140px;
+        height: 20px;
+        background-color: transparent;
+        border: 1px solid white;
+        border-radius: 10px;
+    }
+
+    input {
+        color: white;
+        font-size: 18px;
+    }
+
+    .title input::placeholder {
+        color: white;
+        font-size: 12px;
+        padding-left: 13px;
+    }
+
+    p {
+        font-size: 10px;
+        color: rgb(255, 0, 0);
+        text-align: center;
+        font-weight: bold;
+        padding: 10px;
+    }
+
+    #catogory {
+        width: 150px;
+        height: 25px;
+        border: 1px solid rgb(255, 255, 255);
+        border-radius: 10px;
+        color: white;
+        text-decoration: none;
+        font-size: 12px;
+        padding-left: 10px;
+        background-color: transparent;
+    }
+
+    #catogory option {
+        background: red;
+    }
+
+    .ham-bar a {
+        text-decoration: none;
+        list-style: none;
+        color: black;
+        display: grid;
+        place-items: center;
+        margin: 20px;
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .wrong {
+        margin: 10px;
+        margin-bottom: 0px;
+        font-size: 15px;
+        padding: 10px;
+
+    }
+
+    .ham {
+        background-color: rgba(255, 255, 255, 0.809);
+        height: 597px;
+        transform: translateX(220px);
+    }
+
+    .menu {
+        margin: 20px;
+        font-size: 25px;
+        transform: translateX(260px);
+
+    }
+
+    .mun {
+        display: block;
+        position: absolute;
+        font-size: 12px;
+        background-color: none;
+    }
+}
