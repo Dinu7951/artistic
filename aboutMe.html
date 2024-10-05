@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Milestone Club</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    * {
+      font-family: "Rokkitt", serif;
+    }
+
+    body {
+      background-color: black;
+      color: white;
+      font-family: "Rokkitt", serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      width: 80%;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .header {
+      margin-bottom: 20px;
+    }
+
+    .header h1 {
+      padding: 15px;
+      /* text-align: left; */
+      font-size: 40px;
+      letter-spacing: 5px;
+      font-weight: 400;
+      color: #c0c0c0;
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+      margin: 10px;
+    }
+
+    .milestone-section {
+      position: relative;
+      text-align: center;
+      background-image: url("./Images/pic.jpg");
+      background-size: cover;
+      background-position: center;
+      padding: 100px 20px;
+      border-radius: 12px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+      height: 450px;
+      color: white;
+    }
+
+    .milestone-section::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 12px;
+      z-index: 1;
+    }
+
+    .milestone-section h1,
+    .milestone-text {
+      position: relative;
+      z-index: 2;
+    }
+
+    .milestone-section h1 {
+      font-size: 35px;
+      letter-spacing: 4px;
+      color: #d4af37;
+      margin: 0;
+    }
+
+    .milestone-text {
+      font-size: 23px;
+      line-height: 1.8;
+      color: rgba(255, 255, 255, 0.9);
+      text-align: justify;
+      margin-top: 20px;
+      letter-spacing: 1px;
+    }
+
+    .back-link {
+      display: block;
+      text-align: center;
+      margin-top: 30px;
+      color: #d4af37;
+      text-decoration: none;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+
+    /* Team Member Section */
+    .team-member {
+      display: flex;
+      align-items: center;
+      margin-bottom: 30px;
+      padding: 20px;
+      background-color: #1a1a1a;
+      border-radius: 8px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .team-image {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-right: 20px;
+    }
+
+    .team-info {
+      flex-grow: 1;
+    }
+
+    .team-info h2 {
+      color: #d4af37;
+      margin-bottom: 10px;
+    }
+
+    .team-info p {
+      margin: 5px 0;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Artistic Alley Header -->
+  <div class="header">
+    <h1>ARTISTIC ALLEY</h1>
+  </div>
+
+  <!-- Milestone Section -->
+  <div class="milestone-section">
+    <h1>MILESTONE</h1>
+    <p class="milestone-text">
+      Milestone Club, established during the 2022-2023 academic year, has
+      rapidly grown to over 50 members, all driven by a shared goal: to
+      empower students by giving them hands-on project experience. The club
+      focuses on building resumes and sharpening practical skills through
+      real-world projects. Each semester, members form teams, take on new
+      challenges, and enhance their abilities as they progress. Our
+      collaborative environment fosters growth, with weekly progress reviews
+      and feedback sessions that encourage continuous improvement. We also
+      prioritize listening to fresh ideas and supporting creative solutions.
+      Milestone Club’s growth is fueled by its commitment to offering
+      meaningful learning opportunities. In addition to project work, we aim
+      to expand our reach by hosting more events, including workshops designed
+      to further enrich our members’ skills. Every initiative we undertake is
+      carefully designed to ensure maximum productivity and long-term value
+      for participants. By focusing on real-world applications and fostering a
+      supportive community, Milestone Club helps students build a strong
+      foundation for their future careers.
+    </p>
+  </div>
+
+
+  <div class="team-member">
+    <img src="./Images/download.png" alt="Vanket_pic" class="team-image" />
+    <div class="team-info">
+      <h2>Devi Sri Venkat Kancherla</h2>
+      <h4> Backend Developer and Team Leader</h4>
+      <p>
+        I had the privilege of leading the development
+        of Artistic Alley, a platform designed for VIT AP students to showcase
+        their talent. As a Team Leader, I guided my team in brainstorming
+        features and ensuring smooth collaboration between frontend and
+        backend. My focus as a Backend Developer involved building a secure
+        and scalable system, managing the database, and developing the core
+        functionality that powers the platform. I ensured seamless integration
+        between the frontend and backend, enabling users to easily upload
+        their artwork and interact with others. This project was an exciting
+        blend of leadership, technical expertise, and problem-solving.
+      </p>
+    </div>
+  </div>
+  <!-- Team Member Profile -->
+  <div class="team-member">
+    <img src="./Images/download.png" alt="Dinesh" class="team-image" />
+    <div class="team-info">
+      <h2> Dinesh Kotha</h2>
+      <h4>Frontend Developer and Designer</h4>
+      <p>
+        I had the privilege of working as a Co-lead
+        Leader at ArtisticAlley & As a Designer, I focused on crafting visually
+        compelling, user-centric experiences, and as a Developer, I ensured
+        that those designs were seamlessly implemented into functional,
+        practical solutions. This blend of leadership, creativity, and
+        technical skills allowed me to drive innovation and deliver impactful
+        results.
+      </p>
+    </div>
+  </div>
+  <div class="team-member">
+    <img src="./Images/download.png" alt="Saniya" class="team-image" />
+    <div class="team-info">
+      <h2> Saniya</h2>
+      <h4> Web Developer</h4>
+      <p>
+        I am a passionate and dedicated frontend developer with a strong command of HTML, CSS,
+        JavaScript, and React. My focus is on creating dynamic, responsive, and user-friendly web applications that
+        deliver seamless user experiences.I constantly strive to stay updated with the latest frontend technologies. I
+        am also a quick learner, always eager to enhance my skills and contribute to impactful projects.
+      </p>
+    </div>
+  </div>
+
+  <!-- Back Link -->
+  <a href="index.html" class="back-link" style="margin: 20px;">Back to Team Page</a>
+</body>
+
+</html>

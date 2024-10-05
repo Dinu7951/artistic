@@ -574,6 +574,12 @@ span {
         border-radius: 29px;
     }
 
+    .primary-head {
+        display: grid;
+        place-items: center;
+        height: 70%;
+    }
+
     .nav-bar ul li {
         font-size: 14px;
     }
@@ -672,6 +678,16 @@ span {
         clip-path: none;
     }
 
+    .header {
+        height: 98vh;
+        background-image: linear-gradient(to left bottom, rgba(199, 198, 198, 0.627), rgba(0, 0, 0, 0.813)),
+            url(Images/indexhome.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* background-position: top; */
+
+
+    }
 
     .ul {
         display: none;
@@ -686,6 +702,12 @@ span {
         font-size: 10px;
         letter-spacing: 11px;
         font-weight: 400;
+    }
+
+    .primary-head {
+        display: grid;
+        place-items: center;
+        height: 70%;
     }
 
     .image {
@@ -862,6 +884,12 @@ span {
 
     .ul {
         display: none;
+    }
+
+    .primary-head {
+        display: grid;
+        place-items: center;
+        height: 70%;
     }
 
     .quote {
@@ -1095,7 +1123,11 @@ span {
         margin: 20px;
     }
 
-
+    .primary-head {
+        display: grid;
+        place-items: center;
+        height: 80%;
+    }
 
     .dabba p {
         top: 35%;

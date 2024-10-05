@@ -38,7 +38,7 @@ body {
     padding: 20px;
     list-style: none;
     font-size: 18px;
-    color: black;
+    color: rgb(0, 0, 0);
 
 
 }
@@ -225,7 +225,7 @@ input:focus {
     font-size: 30px;
     margin: 20px;
     margin-bottom: 0;
-    padding: 20px;
+    padding: 10px;
     float: left;
     margin-top: 0;
 }
@@ -234,7 +234,7 @@ input:focus {
     font-size: 30px;
     margin: 20px;
     margin-bottom: 0;
-    padding: 20px;
+    padding: 10px;
     float: right;
     margin-top: 0%;
 }
@@ -243,7 +243,7 @@ input:focus {
     font-size: 30px;
     margin: 20px;
     margin-bottom: 0;
-    padding: 20px;
+    padding: 10px;
     float: right;
     margin-top: 0%;
 }
@@ -902,7 +902,6 @@ input:focus {
         border: 2px solid white;
         border-radius: 20px 0px 20px;
         font-size: 18px;
-
     }
 
     .fa-magnifying-glass {
@@ -921,7 +920,6 @@ input:focus {
         color: black;
         font-size: 14px;
         padding: 20px;
-
     }
 
     .potrait {
@@ -1015,7 +1013,7 @@ input:focus {
     }
 
     .boxx {
-        transform: translateY(-20px);
+        transform: translateY(-10px);
 
     }
 
@@ -1063,7 +1061,7 @@ input:focus {
         font-size: 16px;
         margin: 20px;
         margin-bottom: 0;
-        padding: 10px;
+        padding: 5px;
         float: left;
         margin-top: 0;
     }
@@ -1072,7 +1070,7 @@ input:focus {
         font-size: 16px;
         margin: 20px;
         margin-bottom: 0;
-        padding: 10px;
+        padding: 5px;
         float: right;
         margin-top: 0;
     }
@@ -1081,7 +1079,7 @@ input:focus {
         font-size: 16px;
         margin: 20px;
         margin-bottom: 0;
-        padding: 10px;
+        padding: 5px;
         float: right;
         margin-top: 0;
     }
@@ -1594,7 +1592,7 @@ input:focus {
 
 
 
-@media screen and (max-width:425px) {
+@media screen and (max-width:375px) {
 
     body {
         background-color: #FFDE4D;
@@ -1772,7 +1770,7 @@ input:focus {
     }
 
     .imgbox img {
-        width: 10cm;
+        width: 9cm;
         height: 5cm;
     }
 
@@ -1790,7 +1788,7 @@ input:focus {
     .title {
         /* text-decoration: underline; */
         text-align: center;
-        font-size: 25px;
+        font-size: 20px;
         font-weight: 300;
         margin: 0;
 
@@ -1799,7 +1797,7 @@ input:focus {
 
     .info {
         display: flex;
-        margin: 10px;
+        margin: 0px;
     }
 
     .info h2 {
@@ -1830,7 +1828,7 @@ input:focus {
 
     .fa-heart {
         font-size: 16px;
-        margin: 20px;
+        margin: 10px;
         margin-bottom: 0;
         padding: 10px;
         float: left;
@@ -1839,7 +1837,7 @@ input:focus {
 
     .fa-thumbs-up {
         font-size: 16px;
-        margin: 20px;
+        margin: 10px;
         margin-bottom: 0;
         padding: 10px;
         float: right;
@@ -1848,7 +1846,7 @@ input:focus {
 
     .fa-share {
         font-size: 16px;
-        margin: 20px;
+        margin: 10px;
         margin-bottom: 0;
         padding: 10px;
         float: right;
@@ -1877,7 +1875,414 @@ input:focus {
     .photo img {
         width: 9cm;
         height: 13cm;
+        padding: 10px;
+    }
+
+    .por {
+        display: flex;
+        width: 17cm;
+        background-color: #FFAF00;
+        margin: 40px 40px 40px 0px;
+        border-radius: 0px 20px 20px 0px;
+        /* animation: none; */
+        animation: fade linear both;
+        animation-timeline: view();
+        animation-range: entry 20% cover 30%;
+        transition: 1s;
+
+    }
+
+    .por-right {
+        display: flex;
+        width: 17cm;
+        background-color: #FFAF00;
+        margin: 40px 40px 40px 0px;
+        border-radius: 20px 0px 0px 20px;
+        position: relative;
+        left: 37%;
+        /* animation: none; */
+        animation: fade linear both;
+        animation-timeline: view();
+        animation-range: entry 50% cover 50%;
+        transition: 1s;
+    }
+
+    .details h1 {
+        text-align: center;
+        font-size: 30px;
+        font-weight: 300;
+        padding-top: 20px;
+    }
+
+    .details {
+        width: 8cm;
+        height: 12cm;
+        display: grid;
+        place-items: center;
+        height: 100%;
         padding: 20px;
+    }
+
+    .details h2 {
+        text-align: center;
+        font-size: 30px;
+        font-weight: 400;
+    }
+
+    .details img {
+        width: 140px;
+        height: 145px;
+        border-radius: 50%;
+        margin: 30px;
+    }
+
+    .details p {
+        font-size: 20px;
+        padding: 20px;
+    }
+
+    .icons {
+        display: flex;
+    }
+
+    .like-por span {
+        display: block;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .ham-bar a {
+        text-decoration: none;
+        list-style: none;
+        color: rgb(255, 255, 255);
+        display: grid;
+        place-items: center;
+        margin: 20px;
+        padding: 10px;
+        font-size: 12px;
+    }
+
+    .wrong {
+        margin: 10px;
+        margin-bottom: 0px;
+        font-size: 15px;
+        padding: 10px;
+
+    }
+
+    .ham {
+        background-color: rgb(0, 0, 0);
+        height: 597px;
+        display: none;
+    }
+
+    .menu {
+        margin: 15px;
+        font-size: 20px;
+
+    }
+
+    .mun {
+        position: absolute;
+        font-size: 12px;
+        display: block;
+        right: 0;
+        background-color: none;
+        z-index: 100;
+    }
+
+
+    .artmen {
+        display: none;
+    }
+
+}
+
+
+@media screen and (max-width:370px) {
+
+    body {
+        background-color: #FFDE4D;
+    }
+
+    .nav-bar {
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 2px solid black;
+    }
+
+    .logo img {
+        width: 30px;
+        position: relative;
+        margin: 10px 0 0 30px;
+        display: block;
+        animation: moveInLeft 1s ease;
+    }
+
+    .logo {
+        display: flex;
+    }
+
+    .nav-bar ul {
+        display: flex;
+        margin: 4px;
+
+    }
+
+    .nav-bar ul li {
+        padding: 16px;
+        list-style: none;
+        font-size: 14px;
+        color: black;
+    }
+
+    .nav-bar a {
+        text-decoration: none;
+
+    }
+
+    .nav-bar button {
+        background: none;
+        color: black;
+        padding: 10px;
+        margin: 1px;
+        font-size: 14px;
+        border: none;
+
+    }
+
+    .nav-bar span {
+        color: black;
+        position: relative;
+        top: 12px;
+    }
+
+    hr {
+        margin: 0 10px 10px 10px;
+        box-shadow: 5px 2px 2px black;
+    }
+
+    .search {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 5%;
+    }
+
+    .mag {
+        width: 170px;
+        background-color: transparent;
+        padding: 6px;
+        border: 2px solid white;
+        border-radius: 20px 0px 20px;
+        font-size: 12px;
+
+    }
+
+    .fa-magnifying-glass {
+        font-size: 10px;
+        float: right;
+        transform: translateX(-50px);
+        padding: 10px;
+    }
+
+    input:focus {
+        outline: none;
+        border: 2px solid black;
+    }
+
+    .mag::placeholder {
+        color: black;
+        font-size: 12px;
+        padding: 20px;
+
+    }
+
+    .potrait {
+        background: none;
+        padding: 6px;
+        width: 80px;
+        font-size: 10px;
+        color: black;
+        border: 2px solid white;
+        border-radius: 20px;
+    }
+
+    .land {
+        background: none;
+        width: 120px;
+        font-size: 14px;
+        color: black;
+        border: 2px solid white;
+        border-radius: 20px;
+        padding: 8px;
+    }
+
+    /* .sec-box {
+    display: none;
+} */
+
+    .head {
+        margin: 20px;
+        font-weight: 400;
+        font-size: 16px;
+        text-align: center;
+        letter-spacing: 4px;
+    }
+
+    .landscape {
+        display: block;
+        margin-top: 0px;
+        background-color: aquamarine;
+        border-radius: 0px 0px 0px 0px;
+        animation: fade linear both;
+        animation-timeline: view();
+        animation-range: entry 50% cover 50%;
+
+    }
+
+    .land {
+        display: none;
+    }
+
+    .landscape-right {
+        display: block;
+        margin-top: 0px;
+        background-color: aquamarine;
+        border-radius: 0px 0px 0px 0px;
+
+    }
+
+    .landscape-right {
+        position: relative;
+        left: 0px;
+        animation: fade linear both;
+        animation-timeline: view();
+        animation-range: entry 20% cover 30%;
+        transition: 1s;
+
+    }
+
+    .landscape img {
+        padding: 10px;
+    }
+
+    .landscape-right img {
+        padding: 10px;
+    }
+
+    .imgbox {
+        display: grid;
+        place-items: center;
+    }
+
+    .imgbox img {
+        width: 8.5cm;
+        height: 5cm;
+    }
+
+    .user {
+        width: 4cm;
+        height: 4cm;
+
+    }
+
+    .boxx {
+        transform: translateY(-20px);
+
+    }
+
+    .title {
+        /* text-decoration: underline; */
+        text-align: center;
+        font-size: 20px;
+        font-weight: 300;
+        margin: 0;
+
+
+    }
+
+    .info {
+        display: flex;
+        margin: 0px;
+    }
+
+    .info h2 {
+        padding: 8px;
+        font-size: 18px;
+        display: block;
+        font-weight: 400;
+        /* text-decoration: underline; */
+    }
+
+    .info p {
+        font-size: 14px;
+        margin: 10px;
+        margin-top: 0%;
+        text-align: center;
+
+    }
+
+
+    .info img {
+        width: 90px;
+        height: 100px;
+        border-radius: 50%;
+        padding: 10px;
+        margin-top: 30px;
+
+    }
+
+    .fa-heart {
+        font-size: 16px;
+        margin: 10px;
+        margin-bottom: 0;
+        padding: 10px;
+        float: left;
+        margin-top: 0;
+    }
+
+    .fa-thumbs-up {
+        font-size: 16px;
+        margin: 10px;
+        margin-bottom: 0;
+        padding: 10px;
+        float: right;
+        margin-top: 0;
+    }
+
+    .fa-share {
+        font-size: 16px;
+        margin: 10px;
+        margin-bottom: 0;
+        padding: 10px;
+        float: right;
+        margin-top: 0;
+    }
+
+    .sub {
+        display: flex;
+    }
+
+    .like {
+        padding-left: 10px;
+    }
+
+    .like span {
+        display: block;
+        font-size: 14px;
+
+    }
+
+    .rightsub {
+        display: flex;
+    }
+
+    /* color:#FFAF00,#F5004F; */
+    .photo img {
+        width: 9cm;
+        height: 13cm;
+        padding: 10px;
     }
 
     .por {

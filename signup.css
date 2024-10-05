@@ -5,125 +5,135 @@
     margin: 0;
 }
 
-img {
-    width: 40px;
-    float: left;
-    margin: -10px 0 0 30px;
+html {
+    height: 100%;
 }
 
 body {
-    height: 100vh;
+    height: 100%;
     background-image: linear-gradient(to left bottom, rgba(132, 131, 131, 0.627), rgba(0, 0, 0, 0.813)), url(Images/loginBg.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
+
+}
+
+.head img {
+    width: 40px;
 }
 
 .head {
-    color: white;
-    font-size: 40px;
-    margin: 20px;
-    text-align: center;
-    font-weight: 300;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 5%;
 }
 
-#field {
+.btn {
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 10px;
+    color: white;
+    border-radius: 20px;
+    width: 100px;
+    font-size: 16px;
+
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box h2 {
+    text-align: center;
+    color: white;
+    font-size: 35px;
+    font-weight: 400;
+
+
+}
+
+.phn {
+    display: flex;
+}
+
+.form {
+    border: 2px solid white;
+    padding: 30px;
+}
+
+input {
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 15px;
+    margin: 20px;
+    border-radius: 10px;
+    width: 100%;
+    outline: none;
+    font-size: 18px;
+    color: white;
+
+}
+
+input::placeholder {
+    color: white;
+    padding: 10px;
+    font-size: 18px;
+}
+
+select {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 15px;
+    margin: 20px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+.confi input {
+    width: 400px;
+}
+
+.pass input {
+    width: 400px;
+}
+
+.mail input {
+    width: 400px;
+}
+
+.name input {
+    width: 160px;
+}
+
+.number input {
+    width: 280px;
+}
+
+.but {
     display: flex;
     justify-content: center;
 }
 
-.done {
-    background: ehite;
-    padding: 10px;
-    margin: 20px 20px 0 20px;
-    font-size: 18px;
-    width: 150px;
-    color: black;
+.but button {
+    background-color: white;
+    color: rgb(0, 0, 0);
+    padding: 5px;
     border: 2px solid white;
-    border-radius: 20px;
-}
-
-input[type=text] {
-    color: white;
-    padding-left: 10px;
-    font-size: 15px;
-}
-
-.code {
-    padding: 15px;
-    margin: 15px;
-    border: 2px solid white;
-    background: none;
-    transform: translateX(5px);
-    color: white;
-    border-radius: 10px;
-    font-size: 15px;
-}
-
-.name {
-    border-radius: 5px;
-    font-size: 18px;
-
-}
-
-input[type=password] {
-    color: white;
-}
-
-.container input {
+    width: 100px;
     margin: 20px;
-    background: none;
-    display: inline;
-    border: 2px solid white;
-    justify-content: center;
-}
-
-.container h1 {
-    text-align: center;
-    font-weight: 300;
-    font-size: 40px;
-    text-decoration: underline;
-    color: white;
-}
-
-.container {
-    display: block;
-    align-content: center;
-    border: 2px solid white;
-    box-shadow: 5px 5px 5px rgb(204, 203, 203);
-    border-radius: 10px;
-    padding: 30px;
-}
-
-input::placeholder {
     font-size: 18px;
+    border-radius: 10px;
+}
+
+span a {
     color: white;
-    padding-left: 10px;
 }
 
-.name,
-.phone {
-    width: 150px;
-    border: 1px solid black;
-    height: 40px;
-}
-
-.phone {
-    width: 240px;
-    height: 45px;
-}
-
-.mail,
-.pass,
-.confirm {
-    width: 360px;
-    height: 40px;
-}
-
-a {
-    text-decoration: none;
-    color: white;
-    margin: 10px;
-    font-size: 15px;
+span {
+    float: right;
 }
