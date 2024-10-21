@@ -7,7 +7,7 @@
 
 body {
     height: 100vh;
-    background-image: url(Images/destiny.jpg);
+    background-image: url(/Images/destiny.jpg);
     /* background-position: center; */
     background-repeat: no-repeat;
     background-size: cover;
@@ -205,19 +205,19 @@ p {
 }
 
 .slide:nth-child(1) {
-    background-image: url("Images/register.jpg");
+    background-image: url("/Images/register.jpg");
 }
 
 .slide:nth-child(2) {
-    background-image: url("Images/register-artist.jpg");
+    background-image: url("/Images/register-artist.jpg");
 }
 
 .slide:nth-child(3) {
-    background-image: url("Images/register-literature.jpg");
+    background-image: url("/Images/register-literature.jpg");
 }
 
 .slide:nth-child(4) {
-    background-image: url("Images/fashion-style.jpg");
+    background-image: url("/Images/fashion-style.jpg");
 }
 
 @keyframes slide {
@@ -461,19 +461,19 @@ p {
     }
 
     .slide:nth-child(1) {
-        background-image: url("Images/register.jpg");
+        background-image: url("/Images/register.jpg");
     }
 
     .slide:nth-child(2) {
-        background-image: url("Images/register-artist.jpg");
+        background-image: url("/Images/register-artist.jpg");
     }
 
     .slide:nth-child(3) {
-        background-image: url("Images/register-literature.jpg");
+        background-image: url("/Images/register-literature.jpg");
     }
 
     .slide:nth-child(4) {
-        background-image: url("Images/fashion-style.jpg");
+        background-image: url("/Images/fashion-style.jpg");
     }
 
     @keyframes slide {
@@ -677,19 +677,19 @@ p {
     }
 
     .slide:nth-child(1) {
-        background-image: url("Images/register.jpg");
+        background-image: url("/Images/register.jpg");
     }
 
     .slide:nth-child(2) {
-        background-image: url("Images/register-artist.jpg");
+        background-image: url("/Images/register-artist.jpg");
     }
 
     .slide:nth-child(3) {
-        background-image: url("Images/register-literature.jpg");
+        background-image: url("/Images/register-literature.jpg");
     }
 
     .slide:nth-child(4) {
-        background-image: url("Images/fashion-style.jpg");
+        background-image: url("/Images/fashion-style.jpg");
     }
 
     @keyframes slide {
@@ -716,7 +716,7 @@ p {
 @media screen and (max-width:425px) {
     body {
         background-image: linear-gradient(to left bottom, rgba(0, 0, 0, 0.627), rgba(0, 0, 0, 0.813)),
-            url(Images/photography.jpg);
+            url(/Images/photography.jpg);
 
     }
 
@@ -930,7 +930,7 @@ p {
 @media screen and (max-width:375px) {
     body {
         background-image: linear-gradient(to left bottom, rgba(0, 0, 0, 0.627), rgba(0, 0, 0, 0.813)),
-            url(Images/photography.jpg);
+            url(/Images/photography.jpg);
     }
 
     #slideshow {
@@ -1142,7 +1142,7 @@ p {
 @media screen and (max-width:320px) {
     body {
         background-image: linear-gradient(to left bottom, rgba(0, 0, 0, 0.627), rgba(0, 0, 0, 0.813)),
-            url(Images/photography.jpg);
+            url(/Images/photography.jpg);
     }
 
     #slideshow {

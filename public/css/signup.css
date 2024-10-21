@@ -11,7 +11,7 @@ html {
 
 body {
     height: 100%;
-    background-image: linear-gradient(to left bottom, rgba(132, 131, 131, 0.627), rgba(0, 0, 0, 0.813)), url(Images/loginBg.png);
+    background-image: linear-gradient(to left bottom, rgba(132, 131, 131, 0.627), rgba(0, 0, 0, 0.813)), url(/Images/loginBg.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-size: cover;

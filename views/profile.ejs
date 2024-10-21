@@ -5,72 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile</title>
-    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="/css/profile.css">
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <script src="https://kit.fontawesome.com/336c67dc87.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js">
 </head>
 
 <body>
     <header class="header">
-        <div class="nav-bar">
-            <div class="logo">
-                <a href=""><img src="ICONS/logo icon.png" alt=""></a>
-            </div>
-            <div class="ul">
-                <ul>
-                    <a href="index.html" />
-                    <li>Home</li>
-                    </a>
-                    <a href="scroll.html">
-                        <li>Scroll</li>
-                    </a>
-                    <a href="Register.html">
-                        <li>Register</li>
-                    </a>
-                    <a href="profile.html">
-                        <li>Profile</li>
-                    </a>
-                    <a href="magazine.html">
-                        <li>Magazine</li>
-                    </a>
-                    <span>|</span>
-                    <button class="signup">SignOut</button>
-                </ul>
-            </div>
-            <div class="mun">
-                <i class="fa-solid fa-bars menu" style="color: #ffffff;"></i>
-                <div class="ham">
-                    <i class="fa-solid fa-xmark wrong" style="color: #fff;"></i>
-                    <div class="ham-bar">
-                        <a href="index.html">
-                            <li>Home</li>
-                        </a>
-                        <a href="scroll.html">
-                            <li>Scroll</li>
-                        </a>
-
-                        <a href="profile.html">
-                            <li>Profile</li>
-                        </a>
-                        <a href="Register.html">
-                            <li>Register</li>
-                        </a>
-                        <a href="magazine.html">
-                            <li>Magazine</li>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <%- include("partials/navbar"); -%>
     </header>
     <div class="container">
         <div class="center">
             <div class="box1">
                 <h1>PROFILE</h1>
                 <div class="pic">
-                    <img src="Images/ tra.png" alt="">
+                    <img src="/Images/tra.png" alt="">
                 </div>
                 <center><button class="up">Upload new profile</button></center>
                 <div class="bios btn">
@@ -126,7 +76,7 @@
                 <div class="inner-box">
                     <h2>TITLE</h2>
                     <div class="pics">
-                        <img src="Images/dance.jpg" alt="">
+                        <img src="/Images/dance.jpg" alt="">
                     </div>
                     <center>
                         <button class="delete">Delete</button>
@@ -138,7 +88,7 @@
                 <div class="inner-box">
                     <h2>TITLE</h2>
                     <div class="pics">
-                        <img src="Images/dance.jpg" alt="">
+                        <img src="/Images/dance.jpg" alt="">
                     </div>
                     <center>
                         <button class="delete">Delete</button>
@@ -150,7 +100,7 @@
                 <div class="inner-box">
                     <h2>TITLE</h2>
                     <div class="pics">
-                        <img src="Images/dance.jpg" alt="">
+                        <img src="/Images/dance.jpg" alt="">
                     </div>
                     <center>
                         <button class="delete">Delete</button>
@@ -208,7 +158,7 @@
             </div>
         </div>
     </div>
-    <script src="profile.js"></script>
+    <script src="/js/profile.js"></script>
 </body>
 
 </html>

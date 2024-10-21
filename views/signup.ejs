@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="/css/signup.css">
+    <script>
+        function validateForm(event) {
+            event.preventDefault();
+            const fname = document.querySelector('input[name="fname"]').value;
+            const lname = document.querySelector('input[name="lname"]').value;
+            const email = document.querySelector('input[name="mail"]').value;
+            const phone = document.querySelector('input[name="number"]').value;
+            const password = document.querySelector('input[name="password"]').value;
+            const confirmPassword = document.querySelector('input[name="confi-password"]').value;
+
+            // Validation checks
+            if (phone.length !== 10 || isNaN(phone)) {
+                alert("Phone number must be 10 digits.");
+                return false;
+            }
+
+            if (!email.endsWith("@vitapstudent.ac.in")) {
+                alert("Please use university email id");
+                return false;
+            }
+
+            if (password !== confirmPassword) {
+                alert("Passwords do not match.");
+                return false;
+            }
+
+            // Extract registration number from email
+            const registrationNumber = email.substring(email.indexOf('.')+1, email.indexOf('@'));
+
+            // Create a hidden input field for registration number
+            const form = document.querySelector('.form');
+            let regNumField = document.querySelector('input[name="regdno"]');
+            if (!regNumField) {
+                regNumField = document.createElement("input");
+                regNumField.setAttribute("type", "hidden");
+                regNumField.setAttribute("name", "regdno");
+                form.appendChild(regNumField);
+            }
+            regNumField.value = registrationNumber;
+
+            form.submit();
+        }
+    </script>
+</head>
+
+<body>
+    <div class="center">
+        <div class="box">
+            <h2>BE A MEMBER IN THE ALLEY</h2>
+            <form action="/signup" method="POST" class="form" onsubmit="validateForm(event)">
+                <div class="name">
+                    <input type="text" name="fname" placeholder="FirstName" required>
+                    <input type="text" name="lname" placeholder="LastName" required>
+                </div>
+                <div class="mail">
+                    <input type="email" name="mail" placeholder="Enter VIT AP college mail address" required>
+                </div>
+                <div class="number">
+                    <input type="text" name="number" placeholder="Contact Number" required>
+                </div>
+                <div class="pass">
+                    <input type="password" name="password" placeholder="Create Password" required>
+                </div>
+                <div class="confi">
+                    <input type="password" name="confi-password" placeholder="Confirm Password" required>
+                </div>
+                <div class="but">
+                    <button type="submit">Sign-up</button>
+                </div>
+                <span><a href="/signup">login?</a></span>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

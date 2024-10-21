@@ -8,7 +8,7 @@
 .header {
     height: 98vh;
     background-image: linear-gradient(to left bottom, rgba(199, 198, 198, 0.627), rgba(0, 0, 0, 0.813)),
-        url(Images/home.jpg);
+        url(../Images/home.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     /* background-position: top; */
@@ -16,7 +16,7 @@
 
 }
 
-body {
+body{
     /* background-image: url(Images/background.jpg); */
 }
 
@@ -180,7 +180,7 @@ h3 {
 .dabba {
     height: 98vh;
     /* display: flex; */
-    background-image: linear-gradient(to left bottom, rgba(199, 198, 198, 0.627), rgba(0, 0, 0, 0.722)), url(Images/dabba.jpg);
+    background-image: linear-gradient(to left bottom, rgba(199, 198, 198, 0.627), rgba(0, 0, 0, 0.722)), url(../Images/dabba.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
@@ -189,6 +189,7 @@ h3 {
     animation-timeline: view();
     animation-range: entry 50% cover 50%;
 }
+
 
 .dabba p {
     text-align: left;
@@ -312,7 +313,7 @@ ul {
     margin: 50px;
     width: 1000px;
     border-radius: 50px;
-    background-image: linear-gradient(to left bottom, rgba(203, 203, 203, 0.627), rgba(107, 107, 107, 0.722)), url(Images/time.jpg);
+    background-image: linear-gradient(to left bottom, rgba(203, 203, 203, 0.627), rgba(107, 107, 107, 0.722)), url(../Images/time.jpg);
     background-position: center;
     /* background-repeat: no-repeat; */
     background-size: contain;
@@ -681,7 +682,7 @@ span {
     .header {
         height: 98vh;
         background-image: linear-gradient(to left bottom, rgba(199, 198, 198, 0.627), rgba(0, 0, 0, 0.813)),
-            url(Images/indexhome.jpg);
+            url(../Images/indexhome.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         /* background-position: top; */
