@@ -14,6 +14,7 @@ const port = process.env.port;
 const jwt = require('jsonwebtoken');
 const storage = multer.memoryStorage();
 const public = multer({ storage });
+let userno = "";
 
 
 app.use(express.urlencoded({ extended: true }));
@@ -39,6 +40,10 @@ const userSchema = new mongoose.Schema({
     phone: String,
     password: String,
     regdno: String,
+    bio: String,
+    insta: String,
+    x_link: String,
+    facebook: String,
     verified: { type: Number, default: 0 },
     verificationToken: String,
 });
@@ -67,9 +72,27 @@ app.get('/aboutme', (req, res) => {
     res.render('aboutMe.ejs');
 })
 
-app.get('/profile', (req, res) => {
-    res.render('profile.ejs');
-})
+app.get('/profile', async (req, res) => {
+    // Assuming you're using local storage to store regdno
+    
+    const regdno = userno;
+    console.log(regdno);
+
+    try {
+        const user = await User.findOne({ regdno: regdno });
+        
+        if (user) {
+            console.log(user);
+            // Render the profile page and pass user details
+            res.render('profile.ejs', { user });
+        } else {
+            res.status(404).send('User not found.');
+        }
+    } catch (error) {
+        console.error(error);
+        res.status(500).send('An error occurred while fetching user details.');
+    }
+});
 
 app.get('/register', (req, res) => {
     res.render('register.ejs');
@@ -88,7 +111,7 @@ app.get('/signup', (req, res) => {
 })
 
 app.post('/signup', async (req, res) => {
-    const { fname, lname, mail, phone, password, regdno } = req.body;
+    const { fname, lname, mail, number, password, regdno } = req.body;
     console.log('Received body:', req.body);
 
     const user = await User.findOne({
@@ -104,14 +127,17 @@ app.post('/signup', async (req, res) => {
         res.render('signin.ejs');
     } else {
         const verificationToken = crypto.randomBytes(32).toString('hex');
-        console.log(regdno);
         const newUser = new User({
             fname: fname,
             lname: lname,
             mail: mail,
-            phone:phone,
+            phone:number,
             password: password,
             regdno: regdno,
+            bio:"",
+            insta:"",
+            x_link:"",
+            facebook:"",
             verified: 0,
             verificationToken: verificationToken,
         });
@@ -144,6 +170,55 @@ app.post('/signup', async (req, res) => {
     }
 });
 
+app.get('/edit', async (req, res) => {
+    const regdno = userno; // Get user regdno from the session or storage
+    try {
+        const user = await User.findOne({ regdno: regdno });
+        if (user) {
+            res.render('edit.ejs', { user }); // Render the edit profile page
+        } else {
+            res.status(404).send('User not found.');
+        }
+    } catch (error) {
+        console.error(error);
+        res.status(500).send('An error occurred while fetching user details.');
+    }
+});
+
+app.post('/updateProfile', async (req, res) => {
+    const { fname, lname, mail, phone, bio, insta, x_link, facebook } = req.body;
+    console.log(req.body)
+    const regdno = userno; // Get user regdno from the session or storage
+
+    try {
+        const user = await User.findOneAndUpdate(
+            { regdno: regdno }, // Find user by regdno
+            {
+                fname: fname,
+                lname: lname,
+                mail: mail,
+                phone: phone,
+                bio: bio,
+                insta: insta,
+                x_link: x_link,
+                facebook: facebook
+            },
+            { new: true } // Return the updated document
+        );
+
+        if (user) {
+            // If profile update is successful, redirect to the home page
+            res.redirect('/profile');
+        } else {
+            res.status(404).send('User not found.');
+        }
+    } catch (error) {
+        console.error(error);
+        res.json({ success: false, message: 'An error occurred while updating the profile.' });
+    }
+});
+
+
 app.post('/signin', async (req, res) => {
     const { regdno, password } = req.body;
     const user = await User.findOne({
@@ -154,6 +229,7 @@ app.post('/signin', async (req, res) => {
     });
     if (user) {
         if (password === user.password) {
+            userno = user.regdno;
             const token = jwt.sign({ username: user.name, regdno: user.regdno }, 'artistic');
             res.render('index.ejs');
         } else {

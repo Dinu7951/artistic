@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile</title>
+    <link rel="stylesheet" href="/css/profile.css">
+</head>
+<body>
+    <header class="header">
+        <%- include("partials/navbar"); -%>
+    </header>
+    <div class="container">
+        <h1>Edit Profile</h1>
+        <form id="editProfileForm" action="/updateProfile" method="POST" class="form">
+            <label for="fname">First Name:</label>
+            <input type="text" name="fname" value="<%= user.fname %>" required>
+
+            <label for="lname">Last Name:</label>
+            <input type="text" name="lname" value="<%= user.lname %>" required>
+
+            <label for="mail">Email:</label>
+            <input type="email" name="mail" value="<%= user.mail %>" required>
+
+            <label for="phone">Contact:</label>
+            <input type="text" name="phone" value="<%= user.phone %>" required>
+
+            <label for="bio">Bio:</label>
+            <textarea name="bio" placeholder="Bio in 100 words"><%= user.bio %></textarea>
+
+            <label for="insta">Instagram:</label>
+            <input type="text" name="insta" value="<%= user.insta %>">
+
+            <label for="x_link">X:</label>
+            <input type="text" name="x_link" value="<%= user.x_link %>">
+
+            <label for="facebook">Facebook:</label>
+            <input type="text" name="facebook" value="<%= user.facebook %>">
+
+            <label for="password">Password:</label>
+            <input type="text" name="password" value="<%= user.password %>">
+
+            <button type="submit" class="save">Save</button>
+            <button type="button" class="cancel">Cancel</button>
+        </form>
+    </div>
+
+    
+</body>
+</html>

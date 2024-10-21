@@ -22,7 +22,7 @@
                 <div class="pic">
                     <img src="/Images/tra.png" alt="">
                 </div>
-                <center><button class="up">Upload new profile</button></center>
+                <center><a href="/edit" class="up">Edit profile</a></center>
                 <div class="bios btn">
                     <button>About</button>
                 </div>
@@ -35,13 +35,14 @@
                 <div class="achievements btn">
                     <button>Achievement</button>
                 </div>
-                <div class="passwords btn">
-                    <button>Password Manager</button>
-                </div>
             </div>
             <hr>
             <div class="box2 bio">
-                <li>
+                <%= user.regdno %><br>
+                <%= user.bio %><br>
+                <%= user.fname +" "+ user.lname %><br>
+                <%= user.mail %><br>
+                <!-- <li>
                     <label for="text">Bio :</label>
                 </li>
                 <li>
@@ -70,7 +71,7 @@
                     <button class="cancel">
                         Cancel
                     </button>
-                </li>
+                </li> -->
             </div>
             <div class="box1-5 upload">
                 <div class="inner-box">
@@ -109,7 +110,10 @@
                 </div>
             </div>
             <div class="box3 social ">
-                <li>
+                <%= user.insta %><br>
+                <%= user.x_link %><br>
+                <%= user.facebook %><br>
+                <!-- <li>
                     <label for="Instagram">Instagram :</label>
                     <input type="text" name="insta" id="Instagram">
                 </li>
@@ -132,29 +136,7 @@
                     <button class="cancel">
                         Cancel
                     </button>
-                </li>
-            </div>
-            <div class="box4 password ">
-                <li>
-                    <label for="old">Old Password :</label>
-                    <input type="text" name="old-pass" id="old" placeholder="Enter Old Password">
-                </li>
-                <li>
-                    <label for="Create">Create New Password :</label>
-                    <input type="password" name="create" id="Create" placeholder="Enter New Password">
-                </li>
-                <li>
-                    <label for="pass">Confrim New Password :</label>
-                    <input type="text" name="password" id="pass" placeholder="Confirm New Password">
-                </li>
-                <li class="end">
-                    <button class="save">
-                        Save
-                    </button>
-                    <button class="cancel">
-                        Cancel
-                    </button>
-                </li>
+                </li> -->
             </div>
         </div>
     </div>
